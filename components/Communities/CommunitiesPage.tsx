@@ -1,42 +1,49 @@
 import {CommunitiesData} from "../../data/CommunitiesData";
 import {SocialIcon} from "react-social-icons";
+import Image from "next/image";
 
 
 const CommunitiesPage = () => {
 
     return <>
-    <div className={"p-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5"}>
-        {CommunitiesData.map((community, index) => {
-            return (
-                <div key={index} className={"flex flex-col items-center p-5 h-100"}>
-                    <div
-                    className="w-1/2 md:w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-96">
-                        <a href="#">
-                            <img className="rounded-t-lg max-h-48 object-center w-full" src={community.image} alt=""/>
-                        </a>
-                        <div className="p-5">
-                            <a href="#">
-                                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    {community.name}
-                                </h5>
-                            </a>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                {community.description}
-                            </p>
-                            <div className="flex items-center justify-between mt-4">
-                                <div className="flex items-center">
-                                    <SocialIcon url={community.socials.facebook} />
+        <div className="overflow-x-auto w-full">
+            <table className={"table w-full"}>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Socials</th>
+                </tr>
+                </thead>
+                <tbody>
+                {CommunitiesData.map((community, index) => (<>
+                    <tr key={index}>
+                        <td>
+                            <a href={community.url}>
+                                <div className="flex items-center space-x-3">
+                                    <div className="avatar">
+                                        <div className="mask mask-squircle w-12 h-12">
+                                            <Image fill={true} src={community.image} alt={community.name + "logo"}/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="font-bold">{community.name}</div>
+                                        <div className="text-sm opacity-50">{community.location.country}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            )
-        })
-        }
+                            </a>
+                        </td>
+                        <td>
+                            {community.socials.map((social, index) => (
+                                <span className={"p-0.5"}>
+                                    <SocialIcon key={index} url={social} style={{height: 35, width: 35}}/>
+                                </span>
+                            ))}
+                        </td>
+                    </tr>
+                </>))}
+                </tbody>
+            </table>
         </div>
-
     </>
 }
 
