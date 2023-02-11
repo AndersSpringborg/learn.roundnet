@@ -39,7 +39,7 @@ export const CommunitiesData = [
         image: "/triton-spike.jpg",
         url: "https://www.roundnet.eu/communities/tritonspike",
         location: {
-            country: "United States of America",
+            country: "United States",
             city: "San Diego",
             state: "California"
         },
