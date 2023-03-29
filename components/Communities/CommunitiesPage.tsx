@@ -4,10 +4,9 @@ import Image from "next/image";
 
 
 const CommunitiesPage = () => {
-
     return <>
         <div className="overflow-x-auto w-full">
-            <table className={"table w-full"}>
+            <table className={"table-normal w-full"}>
                 <thead>
                 <tr>
                     <th>Name</th>
