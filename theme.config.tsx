@@ -1,18 +1,28 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import {Logo} from "./components/logo";
+import Headers from "./components/header";
+
+
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <Logo/>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/supercomputer-klubben-aau/sbcc-site',
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://www.instagram.com/onkel_anderss/",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  head: <Headers/>,
   footer: {
-    text: 'Nextra Docs Template',
+    text: '© ' + new Date().getFullYear() +' Anders Aaen Springborg',
   },
+  primaryHue: 266,
+  useNextSeoProps() {
+    return {
+        titleTemplate: '%s - learn roundnet',
+    }
+  }
 }
 
 export default config
