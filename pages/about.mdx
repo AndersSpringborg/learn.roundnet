@@ -1,3 +1,27 @@
 # About
 
-This is the about page! This page is shown on the navbar.
+```tsx
+const About = () => (<div className="bg-white dark:bg-zinc-900 text-black dark:text-white">
+    <div className="2xl:max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-4">
+            <aside className="w-full">
+                <div
+                    className="sticky top-0 rounded-xl w-full px-8 sm:px-16 py-8 lg:py-12 lg:px-10">
+                    <div>
+                        <a href="/" className="text-black dark:text-white">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M6 5h12l3 5l-8.5 9.5a.7.7 0 0 1-1 0L3 10l3-5"></path>
+                                    <path d="M10 12L8 9.8l.6-1"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>)
+
+export default About
+```

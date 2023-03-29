@@ -1,11 +1,19 @@
 {
-  "about": {
+ "about": {
+    "type": "page",
     "title": "About",
-    "type": "page"
+        "theme": {
+      "breadcrumb": true,
+      "footer": true,
+      "sidebar": true,
+      "toc": true,
+      "pagination": true
+    }
   },
   "communities": {
-    "title": "Communities",
-    "type": "page"
+    "type": "page",
+    "title": "Communities"
   },
-  "index": "Introduction"
+  "bible": "Bible"
+
 }

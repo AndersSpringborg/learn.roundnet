@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: '© ' + new Date().getFullYear() +' Anders Aaen Springborg',
   },
-  primaryHue: 266,
+  primaryHue: 55, // https://nextra.site/docs/docs-theme/theme-configuration#theme-color
   useNextSeoProps() {
     return {
         titleTemplate: '%s - learn roundnet',
