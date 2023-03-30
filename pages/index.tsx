@@ -24,7 +24,7 @@ const siteConfig = {
         },
         {
             name: "Roadmap",
-            href: "/bible/introduction#roadmap",
+            href: "/bible#roadmap",
 
         },
         {
