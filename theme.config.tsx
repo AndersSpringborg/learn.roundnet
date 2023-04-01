@@ -22,7 +22,8 @@ const config: DocsThemeConfig = {
     return {
         titleTemplate: '%s - learn roundnet',
     }
-  }
+  },
+  docsRepositoryBase: 'https://github.com/AndersSpringborg/learn.roundnet.site/tree/main'
 }
 
 export default config
