@@ -1,7 +1,7 @@
-{
-  "serving": [
+export const servingDrills = [
     {
       "name": "No Net",
+      "type": "HITTING",
       "equipment": "Bold, (eventuelt optegning)",
       "participants_min": 1,
       "participants_max": 1,
@@ -12,6 +12,7 @@
     },
     {
       "name": "Knee Drill",
+      "type": "HITTING",
       "equipment": "Bold, net",
       "participants_min": 1,
       "participants_max": 1,
@@ -22,6 +23,7 @@
     },
     {
       "name": "Throw",
+      "type": "HITTING",
       "equipment": "Bold",
       "participants_min": 1,
       "participants_max": 1,
@@ -33,6 +35,7 @@
     },
     {
       "name": "Tape Game",
+      "type": "HITTING",
       "equipment": "Bold, net, optegning, væg, tape",
       "participants_min": 1,
       "participants_max": 1,
@@ -43,6 +46,7 @@
     },
     {
       "name": "Tripod Game",
+      "type": "HITTING",
       "equipment": "Bold, net, optegning, tripod, telefon",
       "participants_min": 1,
       "participants_max": 1,
@@ -54,6 +58,7 @@
     },
     {
       "name": "Tennisball",
+      "type": "HITTING",
       "equipment": "Tennisbold, net (optegning)",
       "participants_min": 1,
       "participants_max": 1,
@@ -64,6 +69,7 @@
     },
     {
       "name": "Shadow service",
+      "type": "HITTING",
       "participants_min": 1,
       "participants_max": 1,
       "difficulty": 1,
@@ -72,10 +78,11 @@
       "explanation": "Stand as you normally would when serving. Now complete the desired serve in slow motion and pay attention to the movements you are making and whether they are optimal",
       "variations": "Der kan tilføjes fakes"
     }
-  ],
-  "hitting": [
+  ]
+export const hittingDrills = [
     {
       "name": "Clock Drill",
+      "type": "HITTING",
       "equipment": "Bold, net (NHZ)",
       "participants_min": 1,
       "participants_max": 1,
@@ -86,6 +93,7 @@
     },
     {
       "name": "Step Through",
+      "type": "HITTING",
       "equipment": "Net, NHZ",
       "participants_min": 1,
       "participants_max": 1,
@@ -96,6 +104,7 @@
     },
     {
       "name": "Wall Hits",
+      "type": "HITTING",
       "equipment": "Bold, net, væg (NHZ)",
       "participants_min": 1,
       "participants_max": 1,
@@ -106,6 +115,7 @@
     },
     {
       "name": "Off Net Hits",
+      "type": "HITTING",
       "equipment": "Bold, net (NHZ)",
       "participants_min": 2,
       "participants_max": 2,
@@ -116,6 +126,7 @@
     },
     {
       "name": "Low Blow",
+      "type": "HITTING",
       "equipment": "Bold, net, (NHZ)",
       "participants_min": 2,
       "participants_max": 2,
@@ -125,10 +136,12 @@
       "explanation": "Person A stands approximately one meter from the net and throws balls in to person B. B then makes e.g. 10 open strokes with dominant and non-dominant hand, after which they switch.",
       "variations": "Højden af kastet ind til nettet kan varieres, blød bue gør slaget nemmere og høj bue gør det sværere. Det er også muligt at ændre kasterens position for at få andre vinkler på"
     }
-  ],
-  "defense": [
+  ]
+
+export const defenseDrills = [
     {
       "name": "Walk'n Toss",
+      "type": "DEFENSE",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -140,6 +153,7 @@
     },
     {
       "name": "Who Loops",
+      "type": "DEFENSE",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -151,6 +165,7 @@
     },
     {
       "name": "Block to Block",
+      "type": "DEFENSE",
       "equipment": "Bold, net",
       "participants_min": 2,
       "participants_max": 2,
@@ -162,6 +177,7 @@
     },
     {
       "name": "High or Low",
+      "type": "DEFENSE",
       "equipment": "Bold, net, væg",
       "participants_min": 2,
       "participants_max": 2,
@@ -173,6 +189,7 @@
     },
     {
       "name": "90 Defense",
+      "type": "DEFENSE",
       "equipment": "Bold, net",
       "participants_min": 2,
       "participants_max": 2,
@@ -184,6 +201,7 @@
     },
     {
       "name": "Looper Block",
+      "type": "DEFENSE",
       "equipment": "Bold, net",
       "participants_min": 2,
       "participants_max": 2,
@@ -193,10 +211,12 @@
       "explanation": "Person A starts with the ball and throws it in a soft arc for a pull stroke (person A also makes the stroke). Person B starts RIGHT behind player A. When the ball is thrown, B must try to get as close to the net as possible to A and get a touch on the ball.",
       "variations": "Det ønskede mål med øvelsen er at få berøringer og en følelse af at komme tæt på angriberen. Når dette er opnået kan der laves lidt sværer skud der sætter større krav til forsvaret"
     }
-  ],
-  "setting": [
+  ];
+
+export const settingDrills = [
     {
       "name": "Own the Zone",
+      "type": "SETTING",
       "equipment": "Bold, optegning",
       "participants_min": 2,
       "participants_max": 3,
@@ -208,6 +228,7 @@
     },
     {
       "name": "Climb the Wall",
+      "type": "SETTING",
       "equipment": "Bold, tape, væg",
       "participants_min": 1,
       "participants_max": 1,
@@ -218,6 +239,7 @@
     },
     {
       "name": "Wall Sets",
+      "type": "SETTING",
       "equipment": "Bold, net, væg",
       "participants_min": 1,
       "participants_max": 1,
@@ -229,6 +251,7 @@
     },
     {
       "name": "Tennisball Setting",
+      "type": "SETTING",
       "equipment": "Tennisbold",
       "participants": "1+",
       "difficulty": 2,
@@ -238,6 +261,7 @@
     },
     {
       "name": "Out of System Setting",
+      "type": "SETTING",
       "equipment": "Bold, net",
       "participants_min": 2,
       "participants_max": 2,
@@ -248,6 +272,7 @@
     },
     {
       "name": "Recover Runs",
+      "type": "SETTING",
       "equipment": "Bold, net",
       "participants_min": 2,
       "participants_max": 2,
@@ -259,6 +284,7 @@
     },
     {
       "name": "90 Graders set",
+      "type": "SETTING",
       "equipment": "Bold, (net)",
       "participants_min": 2,
       "participants_max": 2,
@@ -268,10 +294,12 @@
       "explanation": "Person A stands with the ball approximately two meters from Person B and throws the ball in an arc to person B. B must now stand with his shoulder to A and make underhand raises back to A. The correction of the raise must be through the wrist and not by moving the whole arm towards A.",
       "variations": "Kastet kan blive lavet til begge hænder og person B skal reagere på, hvilken hånd der gør for det optimale slag"
     }
-  ],
-  "recieiving": [
+  ];
+
+export const receivingDrills = [
     {
       "name": "Ace or Be Aced",
+      "type": "RECEIVING",
       "equipment": "Bolde, net, optegning",
       "participants_min": 2,
       "participants_max": 2,
@@ -282,6 +310,7 @@
     },
     {
       "name": "Blindspot",
+      "type": "RECEIVING",
       "equipment": "Bold, net, optegning",
       "participants_min": 2,
       "participants_max": 2,
@@ -292,6 +321,7 @@
     },
     {
       "name": "Line dancer",
+      "type": "RECEIVING",
       "equipment": "Optegning",
       "participants": "2, 3",
       "difficulty": 1,
@@ -302,6 +332,7 @@
     },
     {
       "name": "Fetch",
+      "type": "RECEIVING",
       "equipment": "Bold, (optegning)",
       "participants_min": 2,
       "participants_max": 2,
@@ -310,10 +341,12 @@
       "purpose": "Positioning the feet during the serve and quick corrections",
       "explanation": "Person A stands ready to receive a serve (legs down and arms ready). The goal is now to stay on the line but position yourself opposite the ball. Perosn B must make fakes over 5 seconds and then start over. This means that A must move from side to side in step with the ball."
     }
-  ],
-  "gameVariations": [
+  ];
+
+export const gameVariations = [
     {
       "name": "Walls of Lava",
+      "type": "VARIATION",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -325,6 +358,7 @@
     },
     {
       "name": "Hitting is Serving",
+      "type": "VARIATION",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -336,6 +370,7 @@
     },
     {
       "name": "Time to Loop",
+      "type": "VARIATION",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -347,6 +382,7 @@
     },
     {
       "name": "Get That Set",
+      "type": "VARIATION",
       "equipment": "Bold, net, optegning",
       "participants_min": 4,
       "participants_max": 4,
@@ -358,6 +394,7 @@
     },
     {
       "name": "50/50",
+      "type": "VARIATION",
       "equipment": "Bold, Net, opdeling af banen",
       "participants_min": 4,
       "participants_max": 4,
@@ -368,4 +405,5 @@
       "variations": "Det er muligt at lave en angrebsside, altså en side, hvor alle bolde skal slåes væk fra og en forsvarsside, hvor alle bolde skal forsvares på. Dette gør for mere bevægelse på banen, men det gør spillet sværere"
     }
   ]
-}
+
+export const drills = [...servingDrills, ...hittingDrills, ...defenseDrills, ...settingDrills,...receivingDrills, ...gameVariations];
