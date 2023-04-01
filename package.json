@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "learn-roundnet",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Learn Roundnet is a website for learning the sport of Roundnet.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/AndersSpringborg/learn.roundnet.site.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Anders Aaen Springborg <aaspringborg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/AndersSpringborg/learn.roundnet.site/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/AndersSpringborg/learn.roundnet.site#readme",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.2",

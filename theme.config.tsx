@@ -8,7 +8,7 @@ import Headers from "./components/header";
 const config: DocsThemeConfig = {
   logo: <Logo/>,
   project: {
-    link: 'https://github.com/supercomputer-klubben-aau/sbcc-site',
+    link: 'https://github.com/AndersSpringborg/learn.roundnet.site',
   },
   chat: {
     link: "https://www.instagram.com/onkel_anderss/",
