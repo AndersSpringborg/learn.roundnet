@@ -1,0 +1,371 @@
+{
+  "serving": [
+    {
+      "name": "No Net",
+      "equipment": "Bold, (eventuelt optegning)",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Træne isolerede dele af den ønskede serv",
+      "explanation": "Start med at vælge et/to fokuspunkter (toss og kontakt). Serv nu uden noget net og fokuser derfor ikke på andet end udførelsen af det valgte fokusområde. Udfør øvelsen fem gange efterfulgt at reflektion omkring, hvad fungerede, hvad skal ændres."
+    },
+    {
+      "name": "Knee Drill",
+      "equipment": "Bold, net",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "At kunne dykke ned I specifikke elementer af serven uden at koncentrere sig om at ramme nettet",
+      "explanation": "Vælge en specifik serv du vil fokusere på (cut). Placer dig på knæene cirka 1/3 fra nettet med cirka fem bolde. Fokuser på en/to af følgende: Kontakt, Toss, Follow thrue, Spin. Efter fem bold evaluer, hvad der skal forbedres til næste runde."
+    },
+    {
+      "name": "Throw",
+      "equipment": "Bold",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Opbygge forståelse og sikkerhed I dit toss",
+      "explanation": "Find dig en bold og stil dig klar til at serve. Du skal nu lave dit step/fake og UDEN at slå bolden, kaste den op I den position, hvor du vil mene du normalt vil, se nu, hvor bolden rammer  og evaluer kontaktpunktet på jorden.",
+      "variations": "Hvis der bliver lavet to tilfredsstillende kast I streg, så lav det til en rigtig serv, på første dårlige serv gåes der tilbage til kast."
+    },
+    {
+      "name": "Tape Game",
+      "equipment": "Bold, net, optegning, væg, tape",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 1,
+      "purpose": "Træne bredde og consistency I serv",
+      "explanation": "Uden at steppe ud se hvor bredt du kan serve med fem bolde, eventuelt film servene I slowmotion og gennemgå, hvordan du kan gøre den bedre. Forkert spin, dårligt toss, fejl kontakt, mm."
+    },
+    {
+      "name": "Tripod Game",
+      "equipment": "Bold, net, optegning, tripod, telefon",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 1,
+      "purpose": "Grænseteste dine serve, sammentidigt med at skabe video materiale til evaluering",
+      "explanation": "Opsæt din tripod modsat dig og start med at filme. Uden at steppe ud skal du nu se, hvor få serve du skal bruge for at komme fri af tripodden. For hver gang du kommer udenom, ryk tripod en fodlængde breddere ud på servenlinjen",
+      "variations": "Kan laves som en konkurrence for at se, hvem der skal bruge færrest forsøg på at komme fri at tripoden"
+    },
+    {
+      "name": "Tennisball",
+      "equipment": "Tennisbold, net (optegning)",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 1,
+      "purpose": "Skarpne opmærksomheden på kontakt og spin af bolden",
+      "explanation": "Serv fra knæ eller fra stående. Efter hver serv observer dit fokuspunkt. Hvor ramte jeg bolden på hånden eller fik den det korrekte spin."
+    },
+    {
+      "name": "Skyggeserv",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Øve forståelsen for de forskellige bevægelser",
+      "explanation": "Stå som du normal vil gøre når du skal serve. Fuldfør nu den ønskede serv I langsom gennemgang og vær opmærksom på, hvilke bevægelser du laver og om de er optimale",
+      "variations": "Der kan tilføjes fakes"
+    }
+  ],
+  "hitting": [
+    {
+      "name": "Clock Drill",
+      "equipment": "Bold, net (NHZ)",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Gennemgang af alle slag. Kan eventuelt bruges som en opvarmning",
+      "explanation": "Start med at placere dig I atletisk stands over nettet med en bold I hånden, slå nu først fem flicks, push flicks, push, open og pulls, gentag nu med modsatte hånd."
+    },
+    {
+      "name": "Step Through",
+      "equipment": "Net, NHZ",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 2,
+      "intensity": 1,
+      "purpose": "Træne fodarbejdet uden andre fokuspunkter",
+      "explanation": "Start udenfor NHZ, vælg hvilket slag du vil fokusere på og lav din slagbevægelse UDEN bold, men I stedet giv det område af netkanten et slag, hvor du normalt vil så slaget I fokus."
+    },
+    {
+      "name": "Wall Hits",
+      "equipment": "Bold, net, væg (NHZ)",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Træne modtagelse af bolde, som simuleres at komme fra din medspiller",
+      "explanation": "Placeret nettet cirka en meter væk fra en væg. Kast efterfølgende bolden op af vægen, så den kommer I en position, hvorfra du kan træne dit ønskede slag. HUSK begge hænder."
+    },
+    {
+      "name": "Off Net Hits",
+      "equipment": "Bold, net (NHZ)",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Træne håndtering af \"dårlige\" andenberøringer",
+      "explanation": "Stå mindst en meter væk fra nettet og få din makker til at kaste bold hen til dig fra forskellige positioner (foran dig, bagved dig, vedsiden af, osv.) Forsøg at ramme bolden I en optimal højde for at få høj \"hit rate\"."
+    },
+    {
+      "name": "Low Blow",
+      "equipment": "Bold, net, (NHZ)",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Fokus på lave slag og teknisk udførelse",
+      "explanation": "Person A står cirka en meter fra nettet og kaster bolde ind til person B. B lave så f.eks. 10 åbne slag med dominant og non dominant hånd, hvor efter der så byttes.",
+      "variations": "Højden af kastet ind til nettet kan varieres, blød bue gør slaget nemmere og høj bue gør det sværere. Det er også muligt at ændre kasterens position for at få andre vinkler på"
+    }
+  ],
+  "defense": [
+    {
+      "name": "Walk'n Toss",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Forståelse for de tracker/server loop",
+      "explanation": "En person kaster bolden på nettet som bliver grebet af modstanderen. Før bolden bliver kastet videre til anden person, skal det forsvarende hold stille sig I de aftalte positioner for boldens nuværende position. Bolden kastes så hen til anden personen, hvor forsvaret så læser, hvor bolden nu er og tager nye positioner. Igen kastes bolden, denne gang til at angrebsslag, hvor det forsvarende hold så skal få en berøring.",
+      "variations": "Denne øvelse kan laves I alle tempoer og kan laves til snak af scenarier der kan hænde efter servmodtagelse også"
+    },
+    {
+      "name": "Who Loops",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 2,
+      "intensity": 1,
+      "purpose": "At træne kordinering på banen samt forståelse for forsvarsløb",
+      "explanation": "Bolden kastes I nettet og I det bolden kastes begynder det forsvarende hold at bevæge sig hen I de ønskede positioner. Servemodtageren slår bolden som en modtagelse til sin makker, som griber den og I samme bevægelse kaster den til et angreb. Ideen er at give forsvaret lidt ekstra tid til at nå ud i de ønskede positioner.",
+      "variations": "Øvelsen kan også laves for bolde midt I spil, hvor der kan diskuteres, hvem der har, hvilke bolde"
+    },
+    {
+      "name": "Block to Block",
+      "equipment": "Bold, net",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 4,
+      "intensity": 3,
+      "purpose": "At træne blokeringer og softtouch",
+      "explanation": "Spillerne skal forsøge at holde bolden I live ved at blokere skudet fra sin modstander, få softtouch over til \"modstanderen\" som så hæver den, så personen der lige har blokeret nu er angriber.",
+      "variations": "Hvis øvelsen er svær kan bolden blive grebet efter en god block, for at tage tempo ud af øvelsen"
+    },
+    {
+      "name": "High or Low",
+      "equipment": "Bold, net, væg",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 4,
+      "intensity": 3,
+      "purpose": "Aflæsning af skud og tilpasning af forsvarsbevægelse",
+      "explanation": "Nettet placeret 1-2 meter fra nettet. Den ene spiller skal kaste bolden op på vægen og afslutter, det vigtigt at afslutningen bliver nem at læse (høj albue = højt skud). Den anden spiller skal nu vurdere, hvilken form for blokering der er nødvendigt for at berøre bolden. Skudende skal kun gå i en retning",
+      "variations": "Tydligheden af kropssporget kan varieres så det passer til niveau"
+    },
+    {
+      "name": "90 Defense",
+      "equipment": "Bold, net",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Her er reaktionen I fokus",
+      "explanation": "Person A står ved nettet og laver angreb I 90 grader af nettet. Person B skal forsvare boldene ",
+      "variations": "Person A kan være låst til kun høje eller lave slag"
+    },
+    {
+      "name": "Looper Block",
+      "equipment": "Bold, net",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 2,
+      "intensity": 3,
+      "purpose": "Fokus på tæt forsvar og korrekt block \"form\"",
+      "explanation": "Person A starter med bolden og kaster den I en blød bue til et pull slag (person A laver også slaget). Person B starter LIGE bagved perosn A. I det bolden kastes skal B forsøge at komme helt tæt på nettet så tæt på A som muligt og få en berøring på bolden.",
+      "variations": "Det ønskede mål med øvelsen er at få berøringer og en følelse af at komme tæt på angriberen. Når dette er opnået kan der laves lidt sværer skud der sætter større krav til forsvaret"
+    }
+  ],
+  "setting": [
+    {
+      "name": "Own the Zone",
+      "equipment": "Bold, optegning",
+      "participants_min": 2,
+      "participants_max": 3,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Aflæsning af setting retning og træning af egen setting",
+      "explanation": "Begge personer står inden for servecirklen og på skift skal bolden hæves op I mindst hofte højde. Rammer hævningen uden for servecirklen taber den person, som skød den ud.",
+      "variations": "Hvis der tilføjes flere spillere kan man spille med liv. Cirklen kan udvides for mere tempo, men øg hævnings højden."
+    },
+    {
+      "name": "Climb the Wall",
+      "equipment": "Bold, tape, væg",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 2,
+      "intensity": 1,
+      "purpose": "Træne præcision og højde af setting",
+      "explanation": "Sæt tre stykker tape på en væg, et i brysthøjde, et I øje højde og et et lille styk over hovedhøjde. Stå cirka en meter fra væggen og tag tre berøringer, hvor den tredje berøring rammer imellem tape 1 og 2, gør nu det samme, men ram imellem tape 2 og 3 osv. Gør dette på begge hænder. Efterfølgende tag to berøringer med samme hånd og bestig væggen igen. Til sidst tag kun en berøring og bestig væggen igen."
+    },
+    {
+      "name": "Wall Sets",
+      "equipment": "Bold, net, væg",
+      "participants_min": 1,
+      "participants_max": 1,
+      "difficulty": 3,
+      "intensity": 1,
+      "purpose": "Træne modtagelsen af bolde der kommer imod en",
+      "explanation": "placer nettet cirka to meter fra nettet og stå på den side af nettet der er væk fra væggen. Kast bolden ind på væggen så den kommer tilbage og lav en hævning der kommer op I hovedhøjde og rammer nettet. Gentag for begge hænder.",
+      "variations": "Distancen nettet fra væggen kan varieres for at gøre spillet nemmere/sværere "
+    },
+    {
+      "name": "Tennisball Setting",
+      "equipment": "Tennisbold",
+      "participants": "1+",
+      "difficulty": 2,
+      "intensity": 1,
+      "purpose": "Træner forståelsen af kontaktpunktet for bolden under hævninger",
+      "explanation": "Hvis du er alene jungler med bolden skiftende hænder og udfordre dig selv ved at skyd ind på vægge og få bolden tilbage under kontrol. For mere end en person, jungler bolden imellem hinanden."
+    },
+    {
+      "name": "Out of System Setting",
+      "equipment": "Bold, net",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 2,
+      "intensity": 1,
+      "purpose": "Træne de sistuationer, hvor man er ude af system",
+      "explanation": "Person A har bolden og står et vilkårligt sted (gerne væk fra nettet) og kaster bolde til person B, som står et lille stykke udenfor servecirklen. Person A kaster bolde der presser, men ikke er umulige at nå for person B. Person B forsøger at lave gode semi høje hævninger, der rammer nettet"
+    },
+    {
+      "name": "Recover Runs",
+      "equipment": "Bold, net",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Træne deep setting og løb tilbage til nettet efter modtagelse",
+      "explanation": "Person A placere sig med bolden cirka ½ meter uden for servecirklen, med person B en meter bagved. Person A kaster bolden lige op I luften og løber direkte tilbage til den modsatte side af nettet. Person B laver en hævning hen over skulderen tilbage til Person A, der nu står klar til at afslutte.",
+      "variations": "Distancen person B står fra person A kan varieres for at gøre øvelsen sværere/lettere"
+    },
+    {
+      "name": "90 Graders set",
+      "equipment": "Bold, (net)",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 1,
+      "intensity": 1,
+      "purpose": "Forståelse for hævnings korrigering",
+      "explanation": "Person A står med bolden cirka to meter fra Person B og kaster bolden I en bue ud til person B. B skal nu stå med skulderen til A og lave underhåndshævninger tilbage til A. Korrigeringen af hævningen skal gennem håndledet og ikke ved at bevæge hele armen ind imod A.",
+      "variations": "Kastet kan blive lavet til begge hænder og person B skal reagere på, hvilken hånd der gør for det optimale slag"
+    }
+  ],
+  "recieiving": [
+    {
+      "name": "Ace or Be Aced",
+      "equipment": "Bolde, net, optegning",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 4,
+      "intensity": 3,
+      "purpose": "Træne modtagelser af serve og serv diversitet",
+      "explanation": "De to personer stiller sig klar til at serve og serve modtage. Med to serveforsøg skal man på skift forsøge at serve esse sin modstander. Laver man et es får man et point, laver man en modtagelse, som lander indenfor NHZ får man et point"
+    },
+    {
+      "name": "Blindspot",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 4,
+      "intensity": 3,
+      "purpose": "Udvikle reaktionsevner",
+      "explanation": "Person A stiller sig på servecirklen med rykken til nettet. Person B stiller sig modsat, men lidt uden for NHZ. Person B stille sig klar til at skyde et skud ud I retningen af person A. Person B kalder \"NU\" når bolden bliver kastet op til skudet og person A skal nu prøve at få en berøring på. Alle skud i retning af person A er tilladt."
+    },
+    {
+      "name": "Linedanser",
+      "equipment": "Optegning",
+      "participants": "2, 3",
+      "difficulty": 1,
+      "intensity": 3,
+      "purpose": "Fodarbejde under serv. Ideen er at skabe en forståelse for at bevæge sig på linjen og ikke parallelt, under serve, for at formindske vinkler",
+      "explanation": "På en fuld optegnet servelinje står 2-3 personer og må nu aldrig forlade linjen. Det er nu en fangeleg på linjen, men man må kun bevæge sig når man er nede I benene og bevægelserne skal ske sidelæns.",
+      "variations": "Kør eventuelt denne leg I intervaller f.eks. 4 runder af 30 sekunder, med 20 sekunders pause"
+    },
+    {
+      "name": "Fetch",
+      "equipment": "Bold, (optegning)",
+      "participants_min": 2,
+      "participants_max": 2,
+      "difficulty": 2,
+      "intensity": 3,
+      "purpose": "Placering af fødderne under serven og hurtige korrigeringer",
+      "explanation": "Person A står klar til at modtage en serv (nede I benene og armene klar). Målet er nu at forblive på linjen men placere sig overfor bolden. Perosn B skal lave fakes over 5 sekunder og så starte forfra. Det vil sige at A skal bevæge sig fra side til side i takt med bolden."
+    }
+  ],
+  "gameVariations": [
+    {
+      "name": "Walls of Lava",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 2,
+      "intensity": 3,
+      "purpose": "Skud variationer",
+      "explanation": "Der spilles med alle normale spilregler, men hvis bolden på noget tidspunkt rør væggen som det første, taber det hold som angreb.",
+      "variations": "Hvis der spilles udendørs, tegn en cirkel dobelt længe af servelinjen"
+    },
+    {
+      "name": "Hitting is Serving",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 3,
+      "intensity": 3,
+      "purpose": "Vending fra forsvar til angreb",
+      "explanation": "Det servende hold stiller sig klar til et åbent skud, hvor den ene kaster bolden op til slag. Det modtagende hold stiller sig med en person klar I block og den anden klar til lange/høje bolde. Der serves om, hvis modtager holdet ikke for en okay modtagelse. Misses serven taber holdet automatisk et point.",
+      "variations": "Der kan sættes begrænsninger for, hvordan det indledende skud skal se ud"
+    },
+    {
+      "name": "Time to Loop",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 2,
+      "intensity": 3,
+      "purpose": "Forsvarsløb",
+      "explanation": "Spillet starter med en blød serv som bliver grebet, hvor efter bolden bliver kastet op I en blød bue til en hævning. Spillet spilles nu uden flere ændringer",
+      "variations": "Tiden før kastet fra servmodtageren kan ændres for at ændre sværhedsgraden"
+    },
+    {
+      "name": "Get That Set",
+      "equipment": "Bold, net, optegning",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 1,
+      "intensity": 3,
+      "purpose": "Tvinge sets til at være underhånd",
+      "explanation": "Spillet spilles som normalt, men ALLE sets skal være I underhånd, hvis der er et set som ikke er med underhånd taber holdet pointet med det samme",
+      "variations": "Spillet kan ændres til at være alle sets indenfor NHZ skal være underhånd og alt udenfor NHZ kan være spilleres eget valg"
+    },
+    {
+      "name": "50/50",
+      "equipment": "Bold, Net, opdeling af banen",
+      "participants_min": 4,
+      "participants_max": 4,
+      "difficulty": 2,
+      "intensity": 3,
+      "purpose": "Præcision I hævninger",
+      "explanation": "Hvert hold har en banehalvdel (opdelingen af banen 50/50), der må nu ikke på noget tidspunkt afsluttes bolde som ikke har retning af modstanderens banehalvdel",
+      "variations": "Det er muligt at lave en angrebsside, altså en side, hvor alle bolde skal slåes væk fra og en forsvarsside, hvor alle bolde skal forsvares på. Dette gør for mere bevægelse på banen, men det gør spillet sværere"
+    }
+  ]
+}
