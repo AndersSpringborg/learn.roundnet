@@ -63,7 +63,7 @@
       "explanation": "Serv fra knæ eller fra stående. Efter hver serv observer dit fokuspunkt. Hvor ramte jeg bolden på hånden eller fik den det korrekte spin."
     },
     {
-      "name": "Skyggeserv",
+      "name": "Shadow service",
       "participants_min": 1,
       "participants_max": 1,
       "difficulty": 1,
@@ -291,7 +291,7 @@
       "explanation": "Person A stiller sig på servecirklen med rykken til nettet. Person B stiller sig modsat, men lidt uden for NHZ. Person B stille sig klar til at skyde et skud ud I retningen af person A. Person B kalder \"NU\" når bolden bliver kastet op til skudet og person A skal nu prøve at få en berøring på. Alle skud i retning af person A er tilladt."
     },
     {
-      "name": "Linedanser",
+      "name": "Line dancer",
       "equipment": "Optegning",
       "participants": "2, 3",
       "difficulty": 1,
