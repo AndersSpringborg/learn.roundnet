@@ -1,16 +1,16 @@
-# Nextra Docs Template 
+# Learn Roundnet
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+This is a website for the Learn Roundnet project. It is built with Nextra.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## Contributing
+Go to the folder pages and add a new file with the name of the page you want to create. The file should be a markdown file. You can use the other files in the folder as a template.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
 
-## Quick Start
 
-Click the button to clone this repository and deploy it on Vercel:
+[**Live Website →**](https://vercel.com/aaen/learn-roundnet-site)
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+[![](.github/screenshot.png)](https://vercel.com/aaen/learn-roundnet-site)
+
 
 ## Local Development
 
