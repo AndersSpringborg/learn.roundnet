@@ -1,44 +1,23 @@
-import {drills as drillsData} from "../../data/localization";
-import {useState} from "react";
+import DataTable, { TableColumn } from 'react-data-table-component';
+import {Drill, drills} from "../../data/localization";
+const columns: TableColumn<Drill>[] = [
+    {
+        name: 'Name',
+        selector: row => row.name,
+    },
+    {
+        name: 'Category',
+        selector: row => row.type,
+    },
+    {
+        name: 'Equipment',
+        selector: row => row.equipment,
+    }
+];
 
 
 const DrillOverview = () => {
-    const [drills, setDrills] = useState(drillsData);
-
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <table className={"table-normal w-full"}>
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Level</th>
-                    <th>Duration</th>
-                    <th>Players</th>
-                    <th>Equipment</th>
-                    <th>Notes</th>
-                </tr>
-                </thead>
-                <tbody>
-                {drills.map((drill, index) => (<>
-                    <tr key={index}>
-                        <td>
-                            <div className="font-bold">{drill.name}</div>
-                        </td>
-                        <td>
-                            <div className="font-bold">{drill.type}</div>
-                        </td>
-                        <td>
-                            <div className="font-bold">{drill.equipment}</div>
-                        </td>
-                    </tr>
-                    </>))}
-                </tbody>
-            </table>
-        </div>
-
-
-    );
+    return <DataTable columns={columns} data={drills}/>
 }
 
-export default DrillOverview;
+export default DrillOverview
