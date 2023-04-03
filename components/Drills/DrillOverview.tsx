@@ -1,4 +1,5 @@
  import {Drill, drills} from "../../data/localization";
+ import {useState} from "react";
 
 // cards of all drills
 const ReadMoreButton = ({link}: { link: string }) => {
@@ -34,7 +35,7 @@ const ParticipantLogo = ({extra = false}) => (
     </svg>
 )
 const DrillCard = ({drill}: { drill: Drill }) => {
-    const [isFlipped, setIsFlipped] = React.useState(true);
+     const [isFlipped, setIsFlipped] = useState(true);
     const cardText = drill.purpose;
     const link = "/drills/" + drill.name;
 
