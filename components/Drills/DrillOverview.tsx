@@ -1,6 +1,4 @@
-import {useTable} from 'react-table'
-import React from "react";
-import {Drill, drills} from "../../data/localization";
+ import {Drill, drills} from "../../data/localization";
 
 // cards of all drills
 const ReadMoreButton = ({link}: { link: string }) => {
