@@ -26,7 +26,7 @@ const DrillCard = ({drill}: { drill: Drill }) => {
     const variable_participants = drill.participants_max - drill.participants_min;
 
     return (
-        <div className="group">
+        <div className="group cursor-pointer">
             <div
                 className={"w-full h-full transform-gpu relative transition-all duration-500 [transform-style:preserve-3d] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700" + (isFlipped ? " [transform:rotateY(180deg)]" : "")}
                 onClick={handleClick}>
