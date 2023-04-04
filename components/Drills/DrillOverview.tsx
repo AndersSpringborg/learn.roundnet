@@ -1,20 +1,5 @@
- import {Drill, drills} from "../../data/localization";
- import {useState} from "react";
-
-// cards of all drills
-const ReadMoreButton = ({link}: { link: string }) => {
-    return (
-        <a href={link}
-           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"></path>
-            </svg>
-        </a>)
-}
+import {Drill, drills} from "../../data/localization";
+import {useState} from "react";
 
 const ParticipantLogo = ({extra = false}) => (
     <svg
@@ -35,91 +20,89 @@ const ParticipantLogo = ({extra = false}) => (
     </svg>
 )
 const DrillCard = ({drill}: { drill: Drill }) => {
-     const [isFlipped, setIsFlipped] = useState(true);
-    const cardText = drill.purpose;
-    const link = "/drills/" + drill.name;
+    const [isFlipped, setIsFlipped] = useState(false);
+    const link = "/drills/";
+    const handleClick = () => setIsFlipped(!isFlipped);
 
     const variable_participants = drill.participants_max - drill.participants_min;
 
-    // return (
-    //     <div className="group h-96 w-80 [perspective:1000px]">
-    //         <div
-    //             className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-    //             <div className="absolute inset-0">
-    //                 <img className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
-    //                      src="https://images.unsplash.com/photo-1562583489-bf23ec64651d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')"
-    //                      alt=""/>
-    //             </div>
-    //             <div
-    //                 className="absolute inset-0 h-full w-full rounded-xl bg-black/80 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-    //                 <div className="flex min-h-full flex-col items-center justify-center">
-    //                     <h1 className="text-3xl font-bold">Jane Doe</h1>
-    //                     <p className="text-lg">Photographer & Art</p>
-    //                     <p className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    //                     <button className="mt-2 rounded-md bg-neutral-800 py-1 px-2 text-sm hover:bg-neutral-900">Read
-    //                         More
-    //                     </button>
-    //                 </div>
-    //             </div>
-    //         </div>
-    // </div>)
     return (
-        <div
-            className="transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    {drill.name}
-                </h5>
-            </a>
-            <p className="flex-grow mb-3 font-normal text-gray-500 dark:text-gray-400">{drill.purpose}</p>
-            <div className="flex justify-between ">
-                <div className="">
-                    <div className="py-2">
-                        {drill.intensity === 1 && <span
-                            className="px-2 py-1 text-xs font-semibold text-pink-700 bg-pink-100 rounded-full dark:text-green-100 dark:bg-green-700">Mild</span>}
-                        {drill.intensity === 2 && <span
-                            className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">Moderate</span>}
-                        {drill.intensity === 3 && <span
-                            className="px-2 py-1 text-xs font-semibold text-purple-700 bg-purple-100 rounded-full dark:text-red-100 dark:bg-red-700">Intense</span>}
+        <div className="group">
+            <div
+                className={"w-full h-full transform-gpu relative transition-all duration-500 [transform-style:preserve-3d] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700" + (isFlipped ? " [transform:rotateY(180deg)]" : "")}
+                onClick={handleClick}>
+                {/*Frontside*/}
+                {<div className={"absolute p-6 w-full h-full [backface-visibility:hidden]"}>
+                    <div className="flex flex-col h-full">
+                        <a href="#">
+                            <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                {drill.name}
+                            </h5>
+                        </a>
+                        <p className="flex-grow mb-3 font-normal text-gray-500 dark:text-gray-400">{drill.purpose}</p>
+                        <div className="flex justify-between ">
+                            <div className="">
+                                <div className="py-2">
+                                    {drill.intensity === 1 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-pink-700 bg-pink-100 rounded-full dark:text-green-100 dark:bg-green-700">Mild</span>}
+                                    {drill.intensity === 2 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">Moderate</span>}
+                                    {drill.intensity === 3 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-purple-700 bg-purple-100 rounded-full dark:text-red-100 dark:bg-red-700">Intense</span>}
+                                </div>
+                                <div>
+                                    {drill.difficulty === 1 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-700">Beginner</span>}
+                                    {drill.difficulty === 2 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">intermediate</span>}
+                                    {drill.difficulty === 3 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-orange-700 bg-orange-100 rounded-full dark:text-red-100 dark:bg-red-700">Advanced</span>}
+                                    {drill.difficulty === 4 && <span
+                                        className="px-2 py-1 text-xs font-semibold text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">Expert</span>}
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                {Array(variable_participants).fill(0).map((_, i) => {
+                                    return <ParticipantLogo extra key={i}/>
+                                })
+                                }
+                                {Array(drill.participants_min).fill(0).map((_, i) => {
+                                    return <ParticipantLogo key={i}/>
+                                })}
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        {drill.difficulty === 1 && <span
-                            className="px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-700">Beginner</span>}
-                        {drill.difficulty === 2 && <span
-                            className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">intermediate</span>}
-                        {drill.difficulty === 3 && <span
-                            className="px-2 py-1 text-xs font-semibold text-orange-700 bg-orange-100 rounded-full dark:text-red-100 dark:bg-red-700">Advanced</span>}
-                        {drill.difficulty === 4 && <span
-                            className="px-2 py-1 text-xs font-semibold text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">Expert</span>}
+                </div>}
+                {/*Backside*/}
+                <div className="w-full h-full p-6 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="text-center text-slate-200 w-full">
+                        <div className="flex flex-col h-full justify-center">
+                            <h2 className="text-xl font-bold text-gray-800 dark:text-white">What is this drill
+                                about?</h2>
+                            <p className="text-gray-600 dark:text-gray-400">{drill.explanation}</p>
+                            <div className="flex justify-center">
+                                <a href={link}
+                                   className="mt-4 px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">
+                                    Learn more
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div className="flex items-center">
-                    {Array(variable_participants).fill(0).map((_, i) => {
-                        return <ParticipantLogo extra key={i}/>
-                    })
-                    }
-                    {Array(drill.participants_min).fill(0).map((_, i) => {
-                        return <ParticipantLogo key={i}/>
-                    })}
                 </div>
             </div>
         </div>
-
-
     )
 }
 
-function DrillOverview() {
-    return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {drills.map((drill) => {
-                return (
-                    <DrillCard drill={drill}/>
-                )
-            })
-            }
-        </div>
-    )
-}
+const DrillOverview = () => (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {drills.map((drill) => {
+            return (
+                <DrillCard drill={drill}/>
+            )
+        })
+        }
+    </div>
+);
 
 export default DrillOverview
