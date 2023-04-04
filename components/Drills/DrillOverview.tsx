@@ -5,11 +5,10 @@ const ParticipantLogo = ({extra = false}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        fill={extra ? "#8ad245" : "#374151"}
         height="30px"
         width="30px"
         viewBox="0 0 489.3 489.3"
-        className="-m-2"
+        className={"-m-2 "+ (extra ? "animate-pulse dark:fill-white fill:slate-300" : "fill-green-600")}
     >
         <g>
             <path
