@@ -31,7 +31,7 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
   return (
     <div
       className={
-        "group cursor-pointer transform-gpu transition-all duration-500 [transform-style:preserve-3d] bg-white border border-gray-200 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 " +
+        "group cursor-pointer transform-gpu transition-all duration-500 [transform-style:preserve-3d] border border-gray-200 rounded-lg shadow-xl dark:border-gray-700 " +
         (isFlipped ? " [transform:rotateY(180deg)]" : "")
       }
       onClick={handleClick}
@@ -39,7 +39,7 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
       {/*Frontside*/}
       {
         <div
-          className={"absolute p-6 w-full h-full [backface-visibility:hidden]"}
+          className="absolute p-6 w-full h-full [backface-visibility:hidden] bg-white dark:bg-gray-800"
         >
           <div className="flex flex-col h-full">
             <a href="#">
@@ -109,7 +109,7 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
         </div>
       }
       {/*Backside*/}
-      <div className="w-full h-full p-6 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+      <div className="w-full h-full p-6 [transform:rotateY(180deg)] [backface-visibility:hidden] bg-white dark:bg-gray-800">
         <div className="text-center text-slate-200 w-full">
           <div className="flex flex-col h-full justify-center">
             <h2 className="text-xl font-bold text-gray-800 dark:text-white">
