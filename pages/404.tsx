@@ -1,7 +1,7 @@
 const FourOhFour = () => (
-<div>
+  <div>
     <h1>404</h1>
-</div>
-)
+  </div>
+);
 
-export default FourOhFour
+export default FourOhFour;
