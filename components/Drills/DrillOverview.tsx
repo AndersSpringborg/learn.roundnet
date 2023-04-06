@@ -1,44 +1,49 @@
-import {drills as drillsData} from "../../data/localization";
-import {useState} from "react";
-
+import {DrillCategory, drills} from "../../data/localization";
+import {DrillCard} from "./DrillCard";
 
 const DrillOverview = () => {
-    const [drills, setDrills] = useState(drillsData);
+  drills.sort((a, b) => {
+    if (a.type < b.type) {
+      return -1;
+    }
+    if (a.type > b.type) {
+      return 1;
+    }
+    return a.name.localeCompare(b.name);
+  });
 
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <table className={"table-normal w-full"}>
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Level</th>
-                    <th>Duration</th>
-                    <th>Players</th>
-                    <th>Equipment</th>
-                    <th>Notes</th>
-                </tr>
-                </thead>
-                <tbody>
-                {drills.map((drill, index) => (<>
-                    <tr key={index}>
-                        <td>
-                            <div className="font-bold">{drill.name}</div>
-                        </td>
-                        <td>
-                            <div className="font-bold">{drill.type}</div>
-                        </td>
-                        <td>
-                            <div className="font-bold">{drill.equipment}</div>
-                        </td>
-                    </tr>
-                    </>))}
-                </tbody>
-            </table>
-        </div>
+  const typeOfDrills = Object.keys(DrillCategory) as Array<
+    keyof typeof DrillCategory
+  >;
 
-
-    );
-}
+  return (
+    <>
+      {typeOfDrills.map((type) => {
+        return (
+          <div key={type} className="p-2">
+            <div className="flex">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white p-2">
+                {type}
+              </h2>
+              {/*Horizontal line*/}
+              <div
+                id="middleLine"
+                className="flex-grow border-t my-auto ml-4 border-2"
+              />
+            </div>
+            <div className="" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {drills
+                .filter((drill) => drill.type === type)
+                .map((drill) => {
+                  return <DrillCard drill={drill} key={drill.name} />;
+                })}
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
 
 export default DrillOverview;
