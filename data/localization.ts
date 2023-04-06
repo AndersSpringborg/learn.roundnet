@@ -13,8 +13,8 @@ export type Drill = {
   equipment?: string;
   participants_min: number;
   participants_max: number;
-  difficulty: number;
-  intensity: number;
+  difficulty: 1 | 2 | 3 | 4 ;
+  intensity: 1 | 2 | 3 ;
   purpose: string;
   explanation: string;
   variations?: string;

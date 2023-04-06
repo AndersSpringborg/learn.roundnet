@@ -1,6 +1,9 @@
 import {Drill} from "../../data/localization";
 import {useState} from "react";
 import {ParticipantLogo} from "../Logos";
+import {DrillIntensity} from "./DrillIntensity";
+import {DrillDifficulty} from "./DrillDifficulty";
+
 
 export const DrillCard = ({drill}: { drill: Drill }) => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -28,51 +31,11 @@ export const DrillCard = ({drill}: { drill: Drill }) => {
                         </p>
                         <div className="flex justify-between ">
                             <div className="">
-                                <div className="py-2">
-                                    {drill.intensity === 1 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-pink-700 bg-pink-100 rounded-full dark:text-green-100 dark:bg-green-700">
-                      Mild
-                    </span>
-                                    )}
-                                    {drill.intensity === 2 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">
-                      Moderate
-                    </span>
-                                    )}
-                                    {drill.intensity === 3 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-purple-700 bg-purple-100 rounded-full dark:text-red-100 dark:bg-red-700">
-                      Intense
-                    </span>
-                                    )}
+                                <div className="py-2">{
+                                    <DrillIntensity drill={drill}/>}
                                 </div>
                                 <div>
-                                    {drill.difficulty === 1 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-700">
-                      Beginner
-                    </span>
-                                    )}
-                                    {drill.difficulty === 2 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full dark:text-yellow-100 dark:bg-yellow-700">
-                      intermediate
-                    </span>
-                                    )}
-                                    {drill.difficulty === 3 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-orange-700 bg-orange-100 rounded-full dark:text-red-100 dark:bg-red-700">
-                      Advanced
-                    </span>
-                                    )}
-                                    {drill.difficulty === 4 && (
-                                        <span
-                                            className="px-2 py-1 text-xs font-semibold text-red-700 bg-red-100 rounded-full dark:text-red-100 dark:bg-red-700">
-                      Expert
-                    </span>
-                                    )}
+                                    <DrillDifficulty drill={drill}/>
                                 </div>
                             </div>
                             <div className="flex items-center">
