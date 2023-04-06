@@ -1,4 +1,4 @@
-import { Drill, drills } from "../../data/localization";
+import { Drill, DrillCategory, drills } from "../../data/localization";
 import { useState } from "react";
 
 const ParticipantLogo = ({ extra = false }) => (
@@ -23,7 +23,6 @@ const ParticipantLogo = ({ extra = false }) => (
 );
 const DrillCard = ({ drill }: { drill: Drill }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const link = "/drills/";
   const handleClick = () => setIsFlipped(!isFlipped);
 
   const variable_participants = drill.participants_max - drill.participants_min;
@@ -38,12 +37,10 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
     >
       {/*Frontside*/}
       {
-        <div
-          className="absolute p-6 w-full h-full [backface-visibility:hidden] bg-white dark:bg-gray-800"
-        >
+        <div className="absolute p-6 w-full h-full [backface-visibility:hidden] bg-white dark:bg-gray-800">
           <div className="flex flex-col h-full">
             <a href="#">
-              <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 {drill.name}
               </h5>
             </a>
@@ -120,14 +117,14 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
             </p>
 
             {drill.variations && (
-                <div className="mt-4">
-                    <h2 className="text-xl font-bold text-gray-800 dark:text-white">
-                        Variation
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400 text-left">
-                        {drill.variations}
-                    </p>
-                </div>
+              <div className="mt-4">
+                <h2 className="text-xl font-bold text-gray-800 dark:text-white">
+                  Variation
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 text-left">
+                  {drill.variations}
+                </p>
+              </div>
             )}
           </div>
         </div>
@@ -136,12 +133,49 @@ const DrillCard = ({ drill }: { drill: Drill }) => {
   );
 };
 
-const DrillOverview = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-    {drills.map((drill) => {
-      return <DrillCard drill={drill} key={drill.name} />;
-    })}
-  </div>
-);
+const DrillOverview = () => {
+  drills.sort((a, b) => {
+    if (a.type < b.type) {
+      return -1;
+    }
+    if (a.type > b.type) {
+      return 1;
+    }
+    return a.name.localeCompare(b.name);
+  });
+
+  const typeOfDrills = Object.keys(DrillCategory) as Array<
+    keyof typeof DrillCategory
+  >;
+
+  return (
+    <>
+      {typeOfDrills.map((type) => {
+        return (
+          <div key={type} className="p-2">
+            <div className="flex">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white p-2">
+                {type}
+              </h2>
+              {/*Horizontal line*/}
+              <div
+                id="middleLine"
+                className="flex-grow border-t my-auto ml-4 border-2"
+              />
+            </div>
+            <div className="" />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {drills
+                .filter((drill) => drill.type === type)
+                .map((drill) => {
+                  return <DrillCard drill={drill} key={drill.name} />;
+                })}
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
 
 export default DrillOverview;
