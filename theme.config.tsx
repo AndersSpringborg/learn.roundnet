@@ -1,10 +1,10 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
-import Logo from "./components/logo";
 import Headers from "./components/header";
 import React from "react";
+import SiteLogo from "./components/Logos/SiteLogo";
 
 const config: DocsThemeConfig = {
-  logo: <Logo width={50} height={50} />,
+  logo: <SiteLogo width={50} height={50} />,
   project: {
     link: "https://github.com/AndersSpringborg/learn.roundnet.site",
   },
