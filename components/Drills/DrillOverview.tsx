@@ -1,10 +1,20 @@
 import { Drill, DrillCategory, Drills } from "../../data/localization";
 import { DrillCard } from "./DrillCard";
 import React, { useState } from "react";
-type FiltersOverview = { participants: number | null , category: Drill['type'] | null, difficulty: Drill['difficulty'] | null}
+type FiltersOverview = {
+  participants: number | null;
+  category: Drill["type"] | null;
+  difficulty: Drill["difficulty"] | null;
+};
 
-type Filter = {options: {value: string, label: string}[], title: string, whenSelected: (value: string, setFilter: React.Dispatch<React.SetStateAction<FiltersOverview>>) => void}
-
+type Filter = {
+  options: { value: string; label: string }[];
+  title: string;
+  whenSelected: (
+    value: string,
+    setFilter: React.Dispatch<React.SetStateAction<FiltersOverview>>
+  ) => void;
+};
 
 const filters: Filter[] = [
   {
@@ -13,15 +23,19 @@ const filters: Filter[] = [
       { value: "1", label: "1" },
       { value: "2", label: "2" },
       { value: "3", label: "3" },
-      { value: "4", label: "4" }],
-    whenSelected: (value , setFilter) => {
-        if (value === "") {
-            setFilter(f => { return {...f, participants: null}});
-        }
-        else {
-            setFilter(f => { return {...f, participants: parseInt(value)}});
-        }
-    }
+      { value: "4", label: "4" },
+    ],
+    whenSelected: (value, setFilter) => {
+      if (value === "") {
+        setFilter((f) => {
+          return { ...f, participants: null };
+        });
+      } else {
+        setFilter((f) => {
+          return { ...f, participants: parseInt(value) };
+        });
+      }
+    },
   },
   {
     title: "Difficulty",
@@ -29,47 +43,52 @@ const filters: Filter[] = [
       { value: "1", label: "Beginner" },
       { value: "2", label: "Intermediate" },
       { value: "3", label: "Advanced" },
-      { value: "4", label: "Expert" }],
-    whenSelected: (value , setFilter) => {
-        if (value === "") {
-            setFilter(f => { return {...f, difficulty: null}});
-        }
-        else {
-            setFilter(f => { return {...f, difficulty: parseInt(value)}});
-        }
-    }
+      { value: "4", label: "Expert" },
+    ],
+    whenSelected: (value, setFilter) => {
+      if (value === "") {
+        setFilter((f) => {
+          return { ...f, difficulty: null };
+        });
+      } else {
+        setFilter((f) => {
+          return { ...f, difficulty: parseInt(value) };
+        });
+      }
+    },
   },
 
   {
     title: "Category",
     options: [
-        { value: DrillCategory.SERVING, label: "Serving" },
-        { value: DrillCategory.HITTING, label: "Hitting" },
-        { value: DrillCategory.SETTING, label: "Setting" },
-        { value: DrillCategory.RECEIVING, label: "Receiving" },
-        { value: DrillCategory.DEFENCE, label: "Defence" },
-        { value: DrillCategory.GAMEPLAY, label: "Gameplay" },
+      { value: DrillCategory.SERVING, label: "Serving" },
+      { value: DrillCategory.HITTING, label: "Hitting" },
+      { value: DrillCategory.SETTING, label: "Setting" },
+      { value: DrillCategory.RECEIVING, label: "Receiving" },
+      { value: DrillCategory.DEFENCE, label: "Defence" },
+      { value: DrillCategory.GAMEPLAY, label: "Gameplay" },
     ],
-    whenSelected: (value , setFilter) => {
-        if (value === "") {
-            setFilter(f => { return {...f, category: null}});
-        }
-        else {
-            const category = value as Drill['type'];
-            setFilter(f => { return {...f, category: category}});
-        }
-    }
+    whenSelected: (value, setFilter) => {
+      if (value === "") {
+        setFilter((f) => {
+          return { ...f, category: null };
+        });
+      } else {
+        const category = value as Drill["type"];
+        setFilter((f) => {
+          return { ...f, category: category };
+        });
+      }
+    },
   },
-
-
 ];
 export const DrillOverview = () => {
   const [drills] = useState(Drills);
   const [filter, setFilter] = useState<FiltersOverview>({
     participants: null,
     category: null,
-    difficulty: null
-  })
+    difficulty: null,
+  });
   drills.sort((a, b) => {
     if (a.type < b.type) {
       return -1;
@@ -79,17 +98,29 @@ export const DrillOverview = () => {
     }
     return a.name.localeCompare(b.name);
   });
-  const participantsFilter = d => filter.participants === null || d.participants_min <= filter.participants && d.participants_max >= filter.participants;
-  const categoryFilter = d => filter.category === null || d.type === filter.category;
-  const difficultyFilter = d => filter.difficulty === null || d.difficulty === filter.difficulty;
+  const participantsFilter = (d) =>
+    filter.participants === null ||
+    (d.participants_min <= filter.participants &&
+      d.participants_max >= filter.participants);
+  const categoryFilter = (d) =>
+    filter.category === null || d.type === filter.category;
+  const difficultyFilter = (d) =>
+    filter.difficulty === null || d.difficulty === filter.difficulty;
 
-  const filteredDrills = drills.filter(d => participantsFilter(d) && categoryFilter(d) && difficultyFilter(d));
+  const filteredDrills = drills.filter(
+    (d) => participantsFilter(d) && categoryFilter(d) && difficultyFilter(d)
+  );
 
   return (
     <>
       <div className="grid gap-4 grid-cols-3 p-2">
-        {filters.map(f => (
-            <Selector title={f.title} options={f.options} whenSelected={(v) => f.whenSelected(v, setFilter)} />))}
+        {filters.map((f) => (
+          <Selector
+            title={f.title}
+            options={f.options}
+            whenSelected={(v) => f.whenSelected(v, setFilter)}
+          />
+        ))}
       </div>
       <DrillCardsOverview drills={filteredDrills} />
     </>
