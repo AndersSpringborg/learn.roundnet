@@ -13,13 +13,13 @@ export type Drill = {
   equipment?: string;
   participants_min: number;
   participants_max: number;
-  difficulty: 1 | 2 | 3 | 4;
-  intensity: 1 | 2 | 3;
+  difficulty: number;
+  intensity: number;
   purpose: string;
   explanation: string;
   variations?: string;
 };
-export const drills: Drill[] = [
+export const Drills: Drill[] = [
   {
     name: "No Net",
     type: DrillCategory.SERVING,
