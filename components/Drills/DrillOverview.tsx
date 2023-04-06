@@ -1,5 +1,5 @@
-import {DrillCategory, drills} from "../../data/localization";
-import {DrillCard} from "./DrillCard";
+import { DrillCategory, drills } from "../../data/localization";
+import { DrillCard } from "./DrillCard";
 
 const DrillOverview = () => {
   drills.sort((a, b) => {
