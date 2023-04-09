@@ -37,6 +37,10 @@ const siteConfig = {
       name: "Communities",
       href: "/communities",
     },
+    {
+      name: "Calculate RPR",
+      href: "/bible/Rpr",
+    }
   ],
 };
 
