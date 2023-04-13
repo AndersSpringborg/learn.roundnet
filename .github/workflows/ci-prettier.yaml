@@ -23,5 +23,5 @@ jobs:
         run: pnpm install prettier
 
       - name: Run prettier
-        run: pnpm run format
+        run: pnpm run format:ci || echo "::error::remember to run 'pnpm run format', and commit again'"
 
