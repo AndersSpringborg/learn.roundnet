@@ -7,4 +7,13 @@
   body {
     @apply dark:bg-trueGray-700;
   }
+  div {
+    @apply border-2 border-red-400;
+  }
+  aside {
+    @apply border-2 border-blue-400;
+  }
+  main {
+    @apply border-2 border-green-400;
+  }
 }
