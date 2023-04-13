@@ -155,9 +155,9 @@ export const Drills: Drill[] = [
     participants_max: 2,
     difficulty: 3,
     intensity: 3,
-    purpose: "Practice handling \"bad\" second touches",
+    purpose: 'Practice handling "bad" second touches',
     explanation:
-      "Stand at least one meter away from the net and have your partner throw the ball to you from different positions (in front of you, behind you, next to you, etc.) Try to hit the ball at an optimal height to get a high \"hit rate\" .",
+      'Stand at least one meter away from the net and have your partner throw the ball to you from different positions (in front of you, behind you, next to you, etc.) Try to hit the ball at an optimal height to get a high "hit rate" .',
   },
   {
     name: "Low Blow",
@@ -212,7 +212,7 @@ export const Drills: Drill[] = [
     intensity: 3,
     purpose: "To train blocking and soft touch",
     explanation:
-      "The players must try to keep the ball alive by blocking the shot from their opponent, get the soft touch over to the \"opponent\" who then raises it so that the person who just blocked is now the attacker.",
+      'The players must try to keep the ball alive by blocking the shot from their opponent, get the soft touch over to the "opponent" who then raises it so that the person who just blocked is now the attacker.',
     variations:
       "If the exercise is difficult, the ball can be caught after a good block, to take the pace out of the exercise",
   },
@@ -250,7 +250,7 @@ export const Drills: Drill[] = [
     participants_max: 2,
     difficulty: 2,
     intensity: 3,
-    purpose: "Focus on close DEFENCE and correct block \"form\"",
+    purpose: 'Focus on close DEFENCE and correct block "form"',
     explanation:
       "Person A starts with the ball and throws it in a soft arc for a pull stroke (person A also makes the stroke). Person B starts RIGHT behind player A. When the ball is thrown, B must try to get as close to the net as possible to A and get a touch on the ball.",
     variations:
@@ -371,7 +371,7 @@ export const Drills: Drill[] = [
     intensity: 3,
     purpose: "Develop reaction skills",
     explanation:
-      "Person A stands on the serve circle with the move to the net. Person B stands opposite, but slightly outside the NHZ. Person B gets ready to shoot a shot in the direction of person A. Person B calls \"NOW\" when the ball is thrown up for the shot and person A must now try to get a touch. All shots in the direction of person A are allowed.",
+      'Person A stands on the serve circle with the move to the net. Person B stands opposite, but slightly outside the NHZ. Person B gets ready to shoot a shot in the direction of person A. Person B calls "NOW" when the ball is thrown up for the shot and person A must now try to get a touch. All shots in the direction of person A are allowed.',
   },
   {
     name: "Line dancer",
