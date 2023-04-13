@@ -9,10 +9,11 @@ import { TailwindIndicator } from "../components/tailwind-indicator";
 const Lightroom = () => (
   <div className="gap-3 p-4 h-full flex">
     <div className="bg-zinc-100 rounded-xl overflow-hidden filter grayscale bg-red-600 w-full">
-      <img
+      <Image
         className="object-cover h-full object- w-full"
         src={"/index.jpg"}
         alt="#"
+        fill
       />
     </div>
   </div>
@@ -22,14 +23,14 @@ const Index = () => {
   return (
     <div className="bg-white dark:bg-zinc-900 text-black dark:text-white min-h-screen">
       <div className="flex h-screen max-w-7xl mx-auto flex-col md:flex-row">
-        <aside className="">
+        <aside className="md:w-1/3">
           <div className="px-8 sm:px-16 py-8 md:px-8 lg:py-12 lg:px-10">
             <div>
               <Link href="/" className="text-black dark:text-white">
                 <SiteLogo width={50} height={50} />
               </Link>
             </div>
-            <h1 className="text-black dark:text-white text-2xl md:text-4xl xl:text-7xl font-bold tracking-tighter">
+            <h1 className="text-black dark:text-white text-2xl md:text-4xl lg:text-7xl font-bold tracking-tighter">
               {siteConfig.title.toLowerCase()}
             </h1>
             <div className="lg:mt-8 max-w-xl">
