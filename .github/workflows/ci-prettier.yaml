@@ -12,19 +12,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          version: 6.32.9
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-          cache: 'pnpm'
+          node-version: 16
+          cache: 'npm'
 
       - name: Install prettier
         # We don't want to save prettier as a dependency, so we use --no-save
-        run: pnpm install --no-save prettier
+        run: npm install --no-save prettier
 
       - name: Run prettier
-        run: pnpm run format:ci || echo "::error::remember to run 'pnpm run format', and commit again'"
+        run: npm run format:ci || echo "::error::remember to run 'pnpm run format', and commit again'"
 
