@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -17,13 +20,10 @@ jobs:
         with:
           node-version: '14'
           cache: 'pnpm'
-      - name: Install prettier
-        run: pnpm install prettier
 
-      # I checkout the code after installing prettier, because I don't want to
-      # install all the dependencies just to run prettier
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Install prettier
+        # We don't want to save prettier as a dependency, so we use --no-save
+        run: pnpm install --no-save prettier
 
       - name: Run prettier
         run: pnpm run format:ci || echo "::error::remember to run 'pnpm run format', and commit again'"
