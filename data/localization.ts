@@ -20,6 +20,17 @@ export type Drill = {
   variations?: string;
 };
 export const Drills: Drill[] = [
+{
+    name: "Attacker v Defender",
+    type: DrillCategory.GAMEPLAY,
+    equipment: "Ball, net, two cones",
+    participants_min: 2,
+    participants_max: 2,
+    difficulty: 3,
+    intensity: 2,
+    purpose: "attacking practcing thei pulls, open and pushes, defender getting quality touches",
+    explanation: "Start by having player A at the net, and player B and the serving line. Player B marks about a quater of the serving line with two cones. Player A now hits the ball towards player B. When player B gets a touch, player A is setting the ball to player B, and player B finishes the ball. Change up the first hit between, pull, open and push shots.",
+  },
   {
     name: "No Net",
     type: DrillCategory.SERVING,
